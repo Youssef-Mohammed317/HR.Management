@@ -1,0 +1,12 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace HR.Management.Application.Features.LeaveType.Commands.DeleteLeaveType
+{
+    public class DeleteLeaveTypeCommand : IRequest<bool>
+    {
+        public int Id { get; set; }
+    }
+}

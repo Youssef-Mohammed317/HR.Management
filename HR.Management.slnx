@@ -1,1 +1,11 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/core/" />
+  <Folder Name="/src/core/Domain/">
+    <Project Path="HR.Management.Application/HR.Management.Application.csproj" Id="8975abe4-7e87-40b9-89c7-a4a356d7b4b7" />
+    <Project Path="HR.Management.Domain/HR.Management.Domain.csproj" Id="0cecf4cd-b128-4561-a739-9f5bcc0c9d91" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="HR.Management.Persistance/HR.Management.Persistance.csproj" Id="20831655-3e40-47a2-986c-17967ec8e632" />
+  </Folder>
+</Solution>
