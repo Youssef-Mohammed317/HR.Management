@@ -6,6 +6,7 @@
     <Project Path="HR.Management.Domain/HR.Management.Domain.csproj" Id="0cecf4cd-b128-4561-a739-9f5bcc0c9d91" />
   </Folder>
   <Folder Name="/src/Infrastructure/">
+    <Project Path="HR.Management.Infrastructure/HR.Management.Infrastructure.csproj" Id="0445ccb1-a989-4a0c-83f5-8f74ef6b9446" />
     <Project Path="HR.Management.Persistance/HR.Management.Persistance.csproj" Id="20831655-3e40-47a2-986c-17967ec8e632" />
   </Folder>
 </Solution>
