@@ -2,19 +2,19 @@
 using HR.Management.Application.Contracts.Persistance;
 using MediatR;
 
-namespace HR.Management.Application.Features.LeaveType.Queries.GetLeaveTypeDetails
+namespace HR.Management.Application.Features.LeaveType.Queries.GetLeaveTypeByIdWithDetails
 {
-    public class GetLeaveTypeDetailsQueryHandler : IRequestHandler<GetLeaveTypeDetailsQuery, LeaveTypeDetailsDto>
+    public class GetLeaveTypeByIdWithDetailsQueryHandler : IRequestHandler<GetLeaveTypeByIdWithDetailsQuery, LeaveTypeDetailsDto>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public GetLeaveTypeDetailsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public GetLeaveTypeByIdWithDetailsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this._unitOfWork = unitOfWork;
             this._mapper = mapper;
         }
-        public async Task<LeaveTypeDetailsDto> Handle(GetLeaveTypeDetailsQuery request, CancellationToken cancellationToken)
+        public async Task<LeaveTypeDetailsDto> Handle(GetLeaveTypeByIdWithDetailsQuery request, CancellationToken cancellationToken)
         {
             var leaveType = await _unitOfWork.LeaveTypeRepository.GetByIdAsync(request.Id);
 

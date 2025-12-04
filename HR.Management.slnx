@@ -1,7 +1,9 @@
 <Solution>
   <Folder Name="/src/" />
-  <Folder Name="/src/core/" />
-  <Folder Name="/src/core/Domain/">
+  <Folder Name="/src/Api/">
+    <Project Path="HR.Management.Api/HR.Management.Api.csproj" Id="6d48b9e5-3db6-4fb6-9553-e3d9313f4641" />
+  </Folder>
+  <Folder Name="/src/core/">
     <Project Path="HR.Management.Application/HR.Management.Application.csproj" Id="8975abe4-7e87-40b9-89c7-a4a356d7b4b7" />
     <Project Path="HR.Management.Domain/HR.Management.Domain.csproj" Id="0cecf4cd-b128-4561-a739-9f5bcc0c9d91" />
   </Folder>

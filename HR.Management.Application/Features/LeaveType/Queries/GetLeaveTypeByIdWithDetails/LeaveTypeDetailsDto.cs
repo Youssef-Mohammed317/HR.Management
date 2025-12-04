@@ -1,4 +1,4 @@
-﻿namespace HR.Management.Application.Features.LeaveType.Queries.GetLeaveTypeDetails
+﻿namespace HR.Management.Application.Features.LeaveType.Queries.GetLeaveTypeByIdWithDetails
 {
     public class LeaveTypeDetailsDto
     {
