@@ -1,4 +1,7 @@
 
+using HR.Management.Application;
+using HR.Management.Infrastructure;
+using HR.Management.Persistance;
 namespace HR.Management.Api
 {
     public class Program
@@ -8,6 +11,14 @@ namespace HR.Management.Api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.AddApplicationServices();
+
+            builder.Services.AddInfrastructureServices(builder.Configuration);
+
+            builder.Services.AddPersistanceServices(builder.Configuration);
+
+
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
