@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="C:/Users/Youssef/OneDrive/Pictures/لقطات الشاشة/Conclusion.png" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/Api/">
     <Project Path="HR.Management.Api/HR.Management.Api.csproj" Id="6d48b9e5-3db6-4fb6-9553-e3d9313f4641" />
