@@ -9,12 +9,15 @@ namespace HR.Management.Api.Middlewares
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly IAppLogger<ExceptionMiddleware> _logger;
+        //private readonly IAppLogger<ExceptionMiddleware> _logger;
 
-        public ExceptionMiddleware(RequestDelegate next, IAppLogger<ExceptionMiddleware> appLogger)
+        public ExceptionMiddleware(RequestDelegate next
+            //,
+            //IAppLogger<ExceptionMiddleware> appLogger
+            )
         {
             this._next = next;
-            this._logger = appLogger;
+            //this._logger = appLogger;
         }
         public async Task InvokeAsync(HttpContext httpContext)
         {

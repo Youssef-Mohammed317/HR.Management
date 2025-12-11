@@ -24,7 +24,16 @@ namespace HR.Management.Persistance.Configrations
             builder.Property(q => q.DefaultDays)
                 .HasColumnType("int")
                 .IsRequired();
-
+            builder.HasData(
+       new LeaveType
+       {
+           Id = 1,
+           Name = "Vacation",
+           DefaultDays = 10,
+           DateCreated = new DateTime(2025, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+           DateModified = new DateTime(2025, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+       }
+   );
             builder.ToTable(t =>
             {
                 t.HasCheckConstraint("CK_LeaveTypes_DefaultDays", "[DefaultDays] >= 1 AND [DefaultDays] <= 100");

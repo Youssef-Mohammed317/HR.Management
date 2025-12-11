@@ -2,6 +2,8 @@
 using HR.Management.Application;
 using HR.Management.Infrastructure;
 using HR.Management.Persistance;
+using HR.Management.Identity;
+using HR.Management.Api.Middlewares;
 namespace HR.Management.Api
 {
     public class Program
@@ -17,7 +19,7 @@ namespace HR.Management.Api
             builder.Services.AddInfrastructureServices(builder.Configuration);
 
             builder.Services.AddPersistanceServices(builder.Configuration);
-
+            builder.Services.AddIdentityServices(builder.Configuration);
 
 
             builder.Services.AddControllers();
@@ -34,6 +36,11 @@ namespace HR.Management.Api
 
             app.UseHttpsRedirection();
 
+            app.UseMiddleware<ExceptionMiddleware>();
+
+            app.UseCors("all");
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
